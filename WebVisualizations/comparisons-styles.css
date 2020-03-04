@@ -28,6 +28,7 @@ body {
     text-align: center;
     font-size: larger;
     text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   /* This is what let's us have separation between the buttons. An empty element whose sole purpose is to fill up all the remaining space, placed in-between the areas we want to separate. Does this seem dumb? Yeah, kind-of, but this technique is *extremely* common with UI work. */
@@ -121,7 +122,7 @@ body {
   }
   
   .block-1 {
-      min-height: 50rem;
+      min-height: 40rem;
   }
   
   .block-1 h2 {
