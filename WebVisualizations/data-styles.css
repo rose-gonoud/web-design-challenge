@@ -24,11 +24,15 @@
     color: white;
     font-weight: bold;
     font-size: medium;
-    width: 300px;
-    text-align: center;
+    width: 20.5rem;
+    height: 5.2rem;
     font-size: larger;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
   }
   
   /* This is what let's us have separation between the buttons. An empty element whose sole purpose is to fill up all the remaining space, placed in-between the areas we want to separate. Does this seem dumb? Yeah, kind-of, but this technique is *extremely* common with UI work. */
@@ -40,6 +44,9 @@
     display: flex;
     align-items: center;
     list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    vertical-align: middle;
   }
   
   .secondary-buttons li {
@@ -112,7 +119,6 @@
     background-color: white;
   }
   
-  /* Ignore this body style, this is only for Codepen */
   body {
     display: flex;
     flex-direction: column;
@@ -147,6 +153,10 @@
     margin-right: 1rem;
   }
 
+  .scroll-div {
+    overflow: scroll;
+  }
+
   hr {
     display: block;
     height: 1px;
@@ -155,3 +165,63 @@
     margin: 1em 1em;
     padding: 0;
   }
+  
+  
+@media (max-width: 580px) {
+
+  /* Common styles for both blocks */
+  .big-block {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
+  .content {
+    min-height: 2000rem;
+  }
+
+  /* Specific styles for each block */
+
+  .dropbtn {
+    padding: 0.5rem;
+    margin-right: -0.5rem;
+  }
+
+  .header .primary-button {
+  /* Getting rid of the default link styles here */
+    margin-left: 0.2rem;
+    background-color: teal;
+  /* Make it larger so that it looks like a button. */
+    padding: 1.8rem 0.7rem;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    width: 20.5rem;
+    height: 5.2rem;
+    font-size: larger;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .content {
+    min-height: 1785rem;
+  }
+
+  .secondary-buttons li {
+  /* Add margins to the left of each of these buttons so that they have spacing between them */
+    margin-left: 1rem;
+    vertical-align: middle;
+  }
+
+  .block-1 {
+    min-height: 860rem;
+    max-width: 50rem;
+  }
+
+  
+   
+}

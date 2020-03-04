@@ -24,7 +24,7 @@ body {
   color: white;
   font-weight: bold;
   font-size: medium;
-  width: 300px;
+  width: 19rem;
   text-align: center;
   font-size: larger;
   text-decoration: none;
@@ -95,7 +95,6 @@ body {
 .dropbtn {
   padding: 1rem;
   margin-right: -1rem;
-  size: 1em;
 }
 
 .content {
@@ -117,16 +116,15 @@ body {
 /* Specific styles for each block */
 .block-1 {
 /* Set its size ratio to 10, and the other 7. This means that in total, flexbox will have 10+7 */
-  flex: 10;
+  flex: 12;
 }
 
 .block-2 {
   margin-left: 3rem;
-  flex: 7;
+  flex: 5;
+  max-height: 25rem;
 }
 
-
-/* Ignore this body style, this is only for Codepen */
 body {
   display: flex;
   flex-direction: column;
@@ -152,12 +150,16 @@ body {
 }
 
 .block-1 img {
-  width: 25rem;
+  width: 30rem;
   float: left;
+  margin-bottom: 0.75rem;
 }
 
 .block-1 p {
   margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: #696969;
 }
 
 .block-2 img {
@@ -171,4 +173,55 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 1em;
   padding: 0;
+}
+
+@media (max-width: 580px) {
+
+  /* Common styles for both blocks */
+  .big-block {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
+  /* Specific styles for each block */
+
+  .dropbtn {
+    padding: 0.5rem;
+    margin-right: -0.5rem;
+  }
+
+  .primary-button {
+    margin-left: 0.2rem;
+  }
+
+  .content {
+    min-height: 70rem;
+  }
+
+  .secondary-buttons li {
+  /* Add margins to the left of each of these buttons so that they have spacing between them */
+    margin-left: 1rem;
+  }
+
+  .block-1 {
+    width: 100%;
+    min-height: 40rem;
+  }
+
+  .block-2 {
+    float: left;
+    width: 100%;
+  }
+
+  .grid-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .block-1 img {
+    width: 23rem;
+    float: left;
+  }
+ 
 }
