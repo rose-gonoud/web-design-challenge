@@ -1,134 +1,173 @@
 /* * Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-    background: #f1f1f1;
-  }
-  
-  .header {
-  /* Make the header layout as a row */
-    display: flex;
-  /* Have each item align to the vertical center (this includes text) */
-    align-items: center;
-    background-color: white;
-  /* Make all the text inside default to this size font */
-    font-size: 1.2rem;
-  /* Add padding to the left and right of the header so that the buttons aren't at the extreme edges */
-    padding: 0 3rem;
-  }
-  
-  .primary-button {
-  /* Getting rid of the default link styles here */
-    margin-left: 3rem;
-    background-color: teal;
-  /* Make it larger so that it looks like a button. */
-    padding: 1.8rem 0.7rem;
-    color: white;
-    font-weight: bold;
-    font-size: medium;
-    width: 300px;
-    text-align: center;
-    font-size: larger;
-  }
-  
-  /* This is what let's us have separation between the buttons. An empty element whose sole purpose is to fill up all the remaining space, placed in-between the areas we want to separate. Does this seem dumb? Yeah, kind-of, but this technique is *extremely* common with UI work. */
-  .spacer {
-    width: 100%;
-  }
-  
-  .secondary-buttons {
-    display: inline-block;
-    color: #696969;
-    font-size: medium;
-    text-decoration: none;
-    padding: 1rem 2rem;
-  /* Add margins to the left of each of these buttons so that they have spacing between them */
-    margin-left: 1rem;
-    cursor: pointer;
-  }
-    
-    /* Dropdown Button */
-  .dropbtn {
-    background-color: white;
-    color: #696969;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-decoration: none;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: teal;}
-  
-  .content {
-  /* Take up all available space (everything except the header) */
-    height: 100%;
-    background-color: #D5D8DC;
-  /* Layout as a row so that the content blocks can be side-by-side */
-    display: flex;
-  /* Add horizontal spacing, along with some space between the header (and footer) and the content (use padding instead of margin so that the empty space still has the same background color) */
-    padding: 2rem 3rem;
-  }
-  
-  /* Common styles for both blocks */
-  .big-block {
-    height: 100%;
-    background-color: white;
-  }
-  
-  /* Specific styles for each block */
-  .block-1 {
-  /* Set its size ratio to 10, and the other 7. This means that in total, flexbox will have 10+7 */
-    flex: 10;
-  }
-  
-  .block-2 {
-    margin-left: 3rem;
-    flex: 7;
-  }
-  
-  
-  /* Ignore this body style, this is only for Codepen */
-  body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* I thought this would turn the header text teal? */
-  .block-1 .h1 {
-    color: teal;
-  }
-  
-  .block-2 .h2 {
-    color: teal;
-  }
+  background: #f1f1f1;
+}
+
+.header {
+/* Make the header layout as a row */
+  display: flex;
+/* Have each item align to the vertical center (this includes text) */
+  align-items: center;
+  background-color: white;
+/* Make all the text inside default to this size font */
+  font-size: 1.2rem;
+/* Add padding to the left and right of the header so that the buttons aren't at the extreme edges */
+  padding: 0 3rem;
+}
+
+.primary-button {
+/* Getting rid of the default link styles here */
+  margin-left: 3rem;
+  background-color: teal;
+/* Make it larger so that it looks like a button. */
+  padding: 1.8rem 0.7rem;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  width: 300px;
+  text-align: center;
+  font-size: larger;
+  text-decoration: none;
+}
+
+/* This is what let's us have separation between the buttons. An empty element whose sole purpose is to fill up all the remaining space, placed in-between the areas we want to separate. Does this seem dumb? Yeah, kind-of, but this technique is *extremely* common with UI work. */
+.spacer {
+  width: 100%;
+}
+
+.secondary-buttons {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.secondary-buttons li {
+/* Add margins to the left of each of these buttons so that they have spacing between them */
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.secondary-buttons a {
+  text-decoration: none;
+}
+
+.list-item a, .dropbtn {
+  color: #696969;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-decoration: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-size: 0.9rem;
+  padding: .75rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: teal;
+  color: white;
+}
+
+.dropbtn {
+  padding: 1rem;
+  margin-right: -1rem;
+  size: 1em;
+}
+
+.content {
+/* Take up all available space (everything except the header) */
+  height: 100%;
+  background-color: #D5D8DC;
+/* Layout as a row so that the content blocks can be side-by-side */
+  display: flex;
+/* Add horizontal spacing, along with some space between the header (and footer) and the content (use padding instead of margin so that the empty space still has the same background color) */
+  padding: 2rem 3rem;
+}
+
+/* Common styles for both blocks */
+.big-block {
+  height: 100%;
+  background-color: white;
+}
+
+/* Specific styles for each block */
+.block-1 {
+/* Set its size ratio to 10, and the other 7. This means that in total, flexbox will have 10+7 */
+  flex: 10;
+}
+
+.block-2 {
+  margin-left: 3rem;
+  flex: 7;
+}
+
+
+/* Ignore this body style, this is only for Codepen */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.block-1 h2 {
+  color: teal;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.block-2 h2 {
+  color: teal;
+  margin-left: 1rem;
+}
+
+.grid-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.block-1 img {
+  width: 25rem;
+  float: left;
+}
+
+.block-1 p {
+  margin-left: 1rem;
+}
+
+.block-2 img {
+  width: 100%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 1em;
+  padding: 0;
+}
