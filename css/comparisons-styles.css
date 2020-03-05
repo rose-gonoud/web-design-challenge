@@ -147,16 +147,12 @@ body {
   margin-left: 1rem;
 }
 
-.grid-block img {
-  width: 100%;
-}
-
 .indiv-grid-content {
   text-align: center;
 }
 
-.block-1 img {
-  width: 30rem;
+.indiv-grid-content img {
+  width: 100%;
 }
 
 .block-1 p {
@@ -174,7 +170,7 @@ hr {
   padding: 0;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 720px) {
 
   /* Common styles for both blocks */
   .big-block {
