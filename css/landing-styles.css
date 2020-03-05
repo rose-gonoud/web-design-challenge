@@ -1,8 +1,8 @@
-/* * Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
   background: #f1f1f1;
 }
 
+/* I know I was supposed to use navbar, but I wanted to play with flexboxes... */
 .header {
 /* Make the header layout as a row */
   display: flex;
@@ -15,6 +15,7 @@ body {
   padding: 0 3rem;
 }
 
+/* This is the homepage return button/site name */
 .primary-button {
   margin-left: 3rem;
   background-color: teal;
@@ -30,7 +31,7 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* This is what let's us have separation between the buttons. An empty element whose sole purpose is to fill up all the remaining space, placed in-between the areas we want to separate. Does this seem dumb? Yeah, kind-of, but this technique is *extremely* common with UI work. */
+/* This is what lets us have separation between the buttons. An empty element whose sole purpose is to fill up all the remaining space, placed in-between the areas we want to separate. Does this seem dumb? Yeah, kind-of, but this technique is *extremely* common with UI work. */
 .spacer {
   width: 100%;
 }
@@ -41,6 +42,7 @@ body {
   list-style: none;
 }
 
+/* These are the rest of the top flex box navigational elements */
 .secondary-buttons li {
 /* Add margins to the left of each of these buttons so that they have spacing between them */
   margin-left: 3rem;
@@ -171,7 +173,8 @@ hr {
   padding: 0;
 }
 
-@media (max-width: 720px) {
+/* I adjusted this media query to the pixel res of my phone for GitHub pages testing :) */
+@media (max-width: 1440px) {
 
   /* Common styles for both blocks */
   .big-block {

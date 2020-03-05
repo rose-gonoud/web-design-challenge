@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather Data Visualization Dashboard</title>
+  <title>Latitude</title>
   <link rel="stylesheet" href="./css/landing-styles.css">
 </head>
 
 <body>
+    <!-- All navigation bar elements in this div -->
     <div class="header">
       <a class="primary-button" href="./index.html">Latitude</a>
       <div class="spacer"></div>
@@ -33,7 +34,10 @@
           
         </ul>
     </div>
+    <!-- This div container has all other page content -->
     <div class="content">
+      <!-- block-1 is larger, left-most block on the page -->
+      <!-- both blocks can be targeted together with .big-block -->
       <div class="big-block block-1">
         <h2>
           Summary: Latitude vs. X
@@ -44,11 +48,13 @@
           The intention of this project was to use a single day's weather data, across over 500 cities, to investigate global weather trends. All weather data was collected through OpenWeather API, using a random sampling of cities, all on 1/29/2020. <br/> <br/> Matplotlib was used to generate all of the visualizatons contained within this site, and the analyses chosen were meant to represent key aspects of weather patterns (temperature, cloudiness, humidity, and wind speed) relative to the latitude from which the data was collected. Analyses for each trend can be found in the "Visualizations" sidebar, and all source data is included.
         </p>
       </div>
+      <!-- block-2 is smaller block to the right -->
       <div class="big-block block-2">
         <h2>
           Visualizations
         </h2>
         <hr/>
+        <!-- each image is in one grid square, all of image is live link -->
         <div class="grid-block">
           <a href="./HTML/temp-page.html" >
             <img src="Resources/assets/images/Fig1.png" alt="Temp vs Latitude">

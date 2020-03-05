@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather Data Visualization Dashboard</title>
+  <title>Latitude</title>
   <link rel="stylesheet" href="../css/visualizations-styles.css">
 </head>
 
 <body>
+    <!-- All navigation bar elements in this div -->
     <div class="header">
       <a class="primary-button" href="../index.html">Latitude</a>
       <div class="spacer"></div>
@@ -33,7 +34,10 @@
           
         </ul>
     </div>
+    <!-- This div container has all other page content -->
     <div class="content">
+      <!-- block-1 is larger, left-most block on the page -->
+      <!-- both blocks can be targeted together with .big-block -->
       <div class="big-block block-1">
         <h2>
           Cloudiness vs. X
@@ -44,11 +48,13 @@
           Overall, cloudiness levels seem clustered around 0 and 100, with fewer data points in between. There is also clear data clustering at measurements that are multiples of 5 and 10. This may say more about human rounding tendencies when collecting this data than it does about the actual spread of clouds around the globe.<br/><br/>Overall this data does not contain any <strong>significant</strong> trend based on location. While certain values still cluster, they don't cluser along geographic location very strongly.
         </p>
       </div>
+      <!-- block-2 is smaller block to the right -->
       <div class="big-block block-2">
         <h2>
           Visualizations
         </h2>
         <hr/>
+        <!-- each image is in one grid square, all of image is live link -->
         <div class="grid-block">
           <a href="../HTML/temp-page.html">
             <img src="../Resources/assets/images/Fig1.png" alt="Temp vs Latitude">

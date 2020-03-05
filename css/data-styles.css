@@ -1,173 +1,174 @@
-/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
-    body {
-    background: #f1f1f1;
-  }
-  
-  .header {
-  /* Make the header layout as a row */
-    display: flex;
-  /* Have each item align to the vertical center (this includes text) */
-    align-items: center;
-    background-color: white;
-  /* Make all the text inside default to this size font */
-    font-size: 1.2rem;
-  /* Add padding to the left and right of the header so that the buttons aren't at the extreme edges */
-    padding: 0 3rem;
-  }
-  
-  .header .primary-button {
-  /* Getting rid of the default link styles here */
-    margin-left: 3rem;
-    background-color: teal;
-  /* Make it larger so that it looks like a button. */
-    padding: 1.8rem 0.7rem;
-    color: white;
-    font-weight: bold;
-    font-size: medium;
-    width: 20.5rem;
-    height: 5.2rem;
-    font-size: larger;
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-    vertical-align: middle;
-  }
-  
-  /* This is what let's us have separation between the buttons. An empty element whose sole purpose is to fill up all the remaining space, placed in-between the areas we want to separate. Does this seem dumb? Yeah, kind-of, but this technique is *extremely* common with UI work. */
-  .spacer {
-    width: 100%;
-  }
-  
-  .secondary-buttons {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-    vertical-align: middle;
-  }
-  
-  .secondary-buttons li {
-  /* Add margins to the left of each of these buttons so that they have spacing between them */
-    margin-left: 3rem;
-    cursor: pointer;
-  }
-  
-  .secondary-buttons a {
-    text-decoration: none;
-  }
-  
-  .list-item a, .dropbtn {
-    color: #696969;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-decoration: none;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    font-size: 0.9rem;
-    padding: .75rem 1rem;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: teal;
-    color: white;
-  }
-  
-  .dropbtn {
-    padding: 1rem;
-    margin-right: -1rem;
-  }
-  
-  .content {
-  /* Take up all available space (everything except the header) */
+body {
+  background: #f1f1f1;
+}
+
+/* I know I was supposed to use navbar, but I wanted to play with flexboxes... */
+.header {
+/* Make the header layout as a row */
+  display: flex;
+/* Have each item align to the vertical center (this includes text) */
+  align-items: center;
+  background-color: white;
+/* Make all the text inside default to this size font */
+  font-size: 1.2rem;
+/* Add padding to the left and right of the header so that the buttons aren't at the extreme edges */
+  padding: 0 3rem;
+}
+
+/* This is the homepage return button/site name */
+.header .primary-button {
+  margin-left: 3rem;
+  background-color: teal;
+/* Make it larger so that it looks like a button. */
+  padding: 1.8rem 0.7rem;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  width: 20.5rem;
+  height: 5.2rem;
+  font-size: larger;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* This is what lets us have separation between the buttons. An empty element whose sole purpose is to fill up all the remaining space, placed in-between the areas we want to separate. Does this seem dumb? Yeah, kind-of, but this technique is *extremely* common with UI work. */
+.spacer {
+  width: 100%;
+}
+
+/* These are the rest of the top flex box navigational elements */
+.secondary-buttons {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+.secondary-buttons li {
+/* Add margins to the left of each of these buttons so that they have spacing between them */
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.secondary-buttons a {
+  text-decoration: none;
+}
+
+.list-item a, .dropbtn {
+  color: #696969;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-decoration: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-size: 0.9rem;
+  padding: .75rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: teal;
+  color: white;
+}
+
+.dropbtn {
+  padding: 1rem;
+  margin-right: -1rem;
+}
+
+.content {
+/* Take up all available space (everything except the header) */
+  min-height: 860rem;
+  background-color: #D5D8DC;
+/* Layout as a row so that the content blocks can be side-by-side */
+  display: flex;
+/* Add horizontal spacing, along with some space between the header (and footer) and the content (use padding instead of margin so that the empty space still has the same background color) */
+  padding: 2rem 3rem;
+}
+
+.big-block {
+  width: 100%;
+  background-color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.block-1 {
     min-height: 860rem;
-    background-color: #D5D8DC;
-  /* Layout as a row so that the content blocks can be side-by-side */
-    display: flex;
-  /* Add horizontal spacing, along with some space between the header (and footer) and the content (use padding instead of margin so that the empty space still has the same background color) */
-    padding: 2rem 3rem;
-  }
+}
 
-  .big-block {
-    width: 100%;
-    background-color: white;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .block-1 {
-      min-height: 860rem;
-  }
-  
-  .block-1 h2 {
-    color: teal;
-    font-size: 2rem;
-    margin-left: 1rem;
-    margin-top: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-  }
-  
-  .block-1 h3 {
-      margin-left: 2rem;
-      color: grey;
-      font-size: 1.01rem;
-  }
+.block-1 h2 {
+  color: teal;
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
 
-  .table {
-    width: 90%;
-    margin-top: 3rem;
+.block-1 h3 {
     margin-left: 2rem;
-    margin-right: 1rem;
-  }
+    color: grey;
+    font-size: 1.01rem;
+}
 
-  .scroll-div {
-    overflow: scroll;
-  }
+.table {
+  width: 90%;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
 
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 1em;
-    padding: 0;
-  }
-  
-  
-@media (max-width: 720px) {
+.scroll-div {
+  overflow: scroll;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 1em;
+  padding: 0;
+}
+
+/* I adjusted this media query to the pixel res of my phone for GitHub pages testing :) */
+@media (max-width: 1440px) {
 
   /* Common styles for both blocks */
   .big-block {
