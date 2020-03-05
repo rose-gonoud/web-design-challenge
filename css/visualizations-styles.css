@@ -175,8 +175,7 @@ hr {
   padding: 0;
 }
 
-/* I adjusted this media query to the pixel res of my phone for GitHub pages testing :) */
-@media (max-width: 1440px) {
+@media (max-width: 720px) {
 
   /* Common styles for both blocks */
   .big-block {
