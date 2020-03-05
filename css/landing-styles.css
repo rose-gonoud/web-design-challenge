@@ -193,6 +193,7 @@ hr {
 
   .content {
     min-height: 70rem;
+    flex-wrap: wrap;
   }
 
   .secondary-buttons li {
@@ -207,7 +208,6 @@ hr {
   }
 
   .block-2 {
-    float: left;
     width: 50%;
   }
 
