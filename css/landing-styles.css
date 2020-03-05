@@ -181,6 +181,16 @@ hr {
   }
 
   /* Specific styles for each block */
+  .block-1 {
+    width: 50;
+    max-height: 50rem;
+    color: #696969;
+  }
+
+  .block-2 {
+    width: 50rem;
+    max-height: 12rem;
+  }
 
   .dropbtn {
     padding: 0.5rem;
@@ -199,17 +209,6 @@ hr {
   .secondary-buttons li {
   /* Add margins to the left of each of these buttons so that they have spacing between them */
     margin-left: 1rem;
-  }
-
-  .block-1 {
-    width: 50;
-    max-height: 50rem;
-    color: #696969;
-  }
-
-  .block-2 {
-    width: 50rem;
-    max-height: 12rem;
   }
 
   .grid-block {
